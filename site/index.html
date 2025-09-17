@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChiroBook - Online Booking System</title>
+    <style>
+        :root {
+            --color-primary: #007BFF;
+            --color-secondary: #6C757D;
+            --color-accent: #28A745;
+            --color-background: #F8F9FA;
+            --color-text: #343A40;
+            --font-heading: 'Arial', sans-serif;
+            --font-body: 'Georgia', serif;
+            --spacing-small: 8px;
+            --spacing-medium: 16px;
+            --spacing-large: 32px;
+            --border-radius: 8px;
+            --shadow-elevation: 0 4px 8px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        body {
+            margin: 0;
+            font-family: var(--font-body);
+            background-color: var(--color-background);
+            color: var(--color-text);
+        }
+        header {
+            background: linear-gradient(135deg, rgba(0, 123, 255, 0.8), rgba(0, 123, 255, 0.5)), url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA
+AAABCAIAAAwX1mZ0AAAAAElFTkSuQmCC') no-repeat center center/cover;
+            padding: var(--spacing-large);
+            text-align: center;
+            position: relative;
+            color: white;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin: var(--spacing-small) 0;
+        }
+        main {
+            max-width: 1200px;
+            margin: auto;
+            padding: var(--spacing-large);
+        }
+        section {
+            margin: var(--spacing-large) 0;
+            padding: var(--spacing-medium);
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-elevation);
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .feature {
+            flex: 1 1 calc(33% - var(--spacing-medium));
+            margin: var(--spacing-small);
+            padding: var(--spacing-medium);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-elevation);
+            transition: var(--transition);
+        }
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            background-color: var(--color-primary);
+            color: white;
+            text-align: center;
+            padding: var(--spacing-large);
+        }
+        .cta-button {
+            background-color: var(--color-accent);
+            color: white;
+            border: none;
+            padding: var(--spacing-medium);
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .cta-button:hover {
+            background-color: var(--color-secondary);
+        }
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+            }
+            .feature {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ChiroBook</h1>
+        <h2>Your Online Booking System for Chiropractors</h2>
+    </header>
+    <main>
+        <section class="features">
+            <div class="feature">
+                <h3>Easy Online Booking</h3>
+                <p>Schedule appointments at your convenience with our user-friendly interface.</p>
+            </div>
+            <div class="feature">
+                <h3>Automated Reminders</h3>
+                <p>Stay on track with automated email and SMS reminders for your appointments.</p>
+            </div>
+            <div class="feature">
+                <h3>Patient Management</h3>
+                <p>Manage your patient records efficiently and securely in one place.</p>
+            </div>
+        </section>
+        <section>
+            <h2>About Us</h2>
+            <p>ChiroBook is dedicated to simplifying the appointment process for both chiropractors and patients. Our platform is designed to enhance patient experience and streamline office management.</p>
+        </section>
+        <section>
+            <h2>Testimonials</h2>
+            <p>"ChiroBook has transformed the way I manage my appointments. It's a game changer!" - Dr. Smith</p>
+            <p>"I love how easy it is to book my sessions. Highly recommend!" - Jane Doe</p>
+        </section>
+        <footer>
+            <h2>Get Started Today!</h2>
+            <button class="cta-button" onclick="window.location.href='https://example.com/signup'">Sign Up Now</button>
+        </footer>
+    </main>
+</body>
+</html>
